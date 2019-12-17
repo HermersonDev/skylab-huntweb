@@ -8,7 +8,7 @@ class Main extends Component {
 	}
 
 	loadProducts = async () => {
-		let products = await api.get('/products');
+		const products = await api.get('/products');
 		console.log(products);
 	}
 
