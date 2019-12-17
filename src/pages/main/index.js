@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import api from "../../services/api";
 
+import "./styles.css";
+
 class Main extends Component {
 	state = {
 		products: []
@@ -17,17 +19,17 @@ class Main extends Component {
 	};
 
 	render() {
-		return (
-			<div>
-				<span id="products-count">
-					{ this.state.products.length } 
-				</span>
+		const { products } = this.state;
 
-				<div className="product-list">
-					{this.state.products.map(product => (
-						<h3 key={product._id}>{product.title}</h3>
-					))}				
-				</div>
+		return (
+			<div className="product-list">
+				{products.map(product => (
+					<article key={product._id}>
+						<h4>{product.title}</h4>
+						<p>{product.description}</p>
+						<a href="">Acessar</a>
+					</article>
+				))}				
 			</div>
 		);
 	}
