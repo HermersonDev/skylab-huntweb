@@ -1,14 +1,14 @@
 span#products-number {
 	background: #E48367;
-	padding: 10px;
-	display: inline-block;
-	margin: 10px;
-	font-weight: bold;
-	color: #fff;
 	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	margin: 10px;
+	padding: 10px;
 	position: absolute;
-	top: 0;
 	right: 0;
+	top: 0;
 }
 
 .product-list {
@@ -50,3 +50,29 @@ span#products-number {
 	background: #da552f;
 	color: #fff;
 }
+
+.product-list .actions {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.product-list .actions button {
+	background: #da552f;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+
+}
+
+.product-list .actions button[disabled] {
+	background: #E48367;
+}
+
+.product-list .actions button:not([disabled]):hover {
+	background: #C74E2B;
+	cursor: pointer;
+}
+
