@@ -25,7 +25,7 @@ class Product extends Component {
 				<p>
 					URL: <a href={product.url}>{product.url}</a>
 				</p>
-				<span>{createdAt}</span>
+				<span><b>Created At</b> - {createdAt}</span>
 			</div>
 		);
 	}
