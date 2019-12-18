@@ -22,14 +22,18 @@ class Main extends Component {
 		const { products } = this.state;
 
 		return (
-			<div className="product-list">
-				{products.map(product => (
-					<article key={product._id}>
-						<h4>{product.title}</h4>
-						<p>{product.description}</p>
-						<a href="">Acessar</a>
-					</article>
-				))}				
+			<div>
+				<span id="products-number">{products.length}</span>
+				<div className="product-list">
+					
+					{products.map(product => (
+						<article key={product._id}>
+							<h4>{product.title}</h4>
+							<p>{product.description}</p>
+							<a href="">Acessar</a>
+						</article>
+					))}				
+				</div>
 			</div>
 		);
 	}
