@@ -21,8 +21,8 @@ class Main extends Component {
 
 		this.setState({ 
 			products: docs, 
-			productInfo: productInfo,
-			page: page 
+			productInfo,
+			page 
 		});
 	}
 

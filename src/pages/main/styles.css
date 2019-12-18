@@ -69,6 +69,7 @@ span#products-number {
 
 .product-list .actions button[disabled] {
 	background: #E48367;
+	cursor: not-allowed;
 }
 
 .product-list .actions button:not([disabled]):hover {
